@@ -11,6 +11,7 @@
     var _tipClass = 'ui-lightip';
     var _prefixTips = _tipClass + '-';
 
+    //jQuery 调用
     $.lightTip = (function () {
 
         var _create = function (message) {
@@ -93,7 +94,17 @@
         return this;
     }
 
-    LightTip.prototype.success = function () {
+    LightTip.prototype.success = function (message, time) {
 
+        this.el.container = $.lightTip.success(message, time);
+        return this;
     }
+
+    LightTip.prototype.error = function (message, time) {
+
+        this.el.container = $.lightTip.error(message, time);
+        return this;
+    }
+
+    return lightTip;
 });
