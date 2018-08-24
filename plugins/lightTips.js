@@ -3,11 +3,11 @@
     if (typeof (define) === 'function' && (define.cmd || define.amd)) {
         define(factory);
     } else {
-        global.lightTip = factory();
+        global.LightTip = factory();
     }
 
 })(this, function () {
-
+    debugger;
     var _tipClass = 'ui-lightip';
     var _prefixTips = _tipClass + '-';
 
@@ -70,7 +70,7 @@
                     lightTips.fadeOut(function () {
                         _remove(lightTips);
                     });
-                }, time || 500);
+                }, time || 700);
 
                 return lightTips;
             },
@@ -81,7 +81,7 @@
                     lightTips.fadeOut(function () {
                         _remove(lightTips);
                     });
-                }, time || 500);
+                }, time || 700);
 
                 return lightTips;
             }
