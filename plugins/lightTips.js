@@ -68,7 +68,7 @@
                 var lightTips = _create(message).addClass(_prefixTips + 'success');
                 setTimeout(function () {
                     lightTips.fadeOut(function () {
-                        _remove(lightTip);
+                        _remove(lightTips);
                     });
                 }, time || 500);
 
@@ -106,5 +106,5 @@
         return this;
     }
 
-    return lightTip;
+    return LightTip;
 });
