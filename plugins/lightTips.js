@@ -7,7 +7,7 @@
     }
 
 })(this, function () {
-    debugger;
+   
     var _tipClass = 'ui-lightip';
     var _prefixTips = _tipClass + '-';
 
