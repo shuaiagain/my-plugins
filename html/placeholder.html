@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../css/lightTips.css" />
+    <link rel="stylesheet" href="../css/placeholder.css" />
     <style type="text/css">
     </style>
 </head>
@@ -13,11 +13,13 @@
         <input class="test" value="" placeholder="请输入" />
     </div>
     <script type="text/javascript" src="../plugins/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="../Placeholder.js"></script>
+    <!-- <script type="text/javascript" src="../Placeholder.js"></script> -->
+    <script type="text/javascript" src="../plugins/placeholder.js"></script>
     <script type="text/javascript">
         $(function () {
-
-            $().placeholder();
+            debugger;
+            $.fn.placeholder && $().placeholder();
+            // new Placeholder($('.test'));
         });
     </script>
 </body>
