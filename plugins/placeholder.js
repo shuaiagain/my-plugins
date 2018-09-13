@@ -10,9 +10,9 @@
     var PLACEHOLDER = 'placeholder';
 
     $.fn[PLACEHOLDER] = function () {
-        debugger;
+
         return $(this).each(function () {
-            debugger;
+
             var placeholder = $(this).data(PLACEHOLDER);
             if (placeholder) {
                 placeholder.visiblity();
